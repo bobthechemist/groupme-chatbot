@@ -2,8 +2,7 @@ from groupy import Client
 import os
 import subprocess
 from secrets import secrets
-from wolframclient.evaluation import WolframLanguageSession
-from wolframclient.language import wl
+from wolframconnector import *
 
 
 class myGroupMe(Client):
@@ -13,8 +12,8 @@ class myGroupMe(Client):
     self.messages = self.group.messages
     self.bot = self.getBot(secrets["BOTID"])
     self.last_message_id = self.getCurrentMessageID()
-    self.wls = WolframLanguageSession('/usr/bin/wolfram')
-    self.startWolframSession()
+    self.wc = WolframConnector()
+
 
   def getBot(self, botid):
     '''Return the requested bot'''
@@ -40,8 +39,25 @@ class myGroupMe(Client):
     next_message = self.group.messages.list_after(self.last_message_id,limit=1)
     if len(list(next_message)) > 0:
       if self.processMessageQ(next_message[0]):
-        self.runWolfram(next_message[0].text[1:])  
+        #TODO: Replace with query selection processor
+        query = str(next_message[0].text[1:])
+        (response, attachments) = self.processWolframAlphaQuery(query)
+        if response == None:
+          response = "Steve doesn't know that."
+        self.bot.post(response, attachments = attachments)
       self.last_message_id = next_message[0].id 
+  
+  def processWolframAlphaQuery(self, query):
+    """Performs WA call and returns a message/attachment tuple
+    """
+    attachments = None
+    response = self.wc.queryWolframAlpha(query)
+    if response == '<image>' and os.path.exists(self.wc.waimage):
+      attachments = self.procImages(self.wc.waimage)
+      os.remove(self.wc.waimage)
+      response = query # attach query text to post of image
+    return (response, attachments)
+
 
   def processMessageQ(self, message):
     '''Determine if the bot should do something with this message'''
@@ -55,40 +71,6 @@ class myGroupMe(Client):
     messages_before = self.messages.list_before(messageid, limit=1)
     message = self.messages.list_after(messages_before[0].id,limit=1)
     return message[0]
-
-#  def runWolfram(self, query):
-#    self.bot.post("I have to think about this...")
-#    cmd = './str.wls "{}"'.format(query)
-#    response = subprocess.check_output(cmd, shell=True)
-#    if os.path.exists('out.png'):
-#      self.bot.post(query, attachments=self.procImages('out.png'))
-#      os.remove('out.png')
-#    else:
-#      #self.bot.post(cmd)
-#      self.bot.post('here we go: {}'.format(response.decode("utf-8")))
-  def runWolfram(self, query):
-    if self.wls.started:
-      response = self.wls.evaluate(wl.Part(wl.WolframAlpha(query),2,2))
-      printable = False 
-      if not 'head' in dir(response):
-        # probably a number or string, so print it
-        printable = True
-      if printable:
-        self.bot.post(str(response))
-      else:
-        self.wls.evaluate(wl.Export('out.png',wl.ReleaseHold(response)))
-        if os.path.exists('out.png'):
-          self.bot.post("I think this is right", attachments=self.procImages('out.png'))
-          os.remove('out.png')
-        else:
-          self.bot.post("I can't do that")
-    else:
-      self.startWolframSession()
-
-  def startWolframSession(self):
-    if not self.wls.started:
-      self.bot.post("Sorry, I'm just waking up.")
-      self.wls.start()
 
 
 

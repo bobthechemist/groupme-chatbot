@@ -10,11 +10,12 @@ Presently the chatbot answers WolframAlpha queries
 
 ## Installation
 
-The groupy and wolframclient modules need to be installed
+The groupy and wolframclient modules need to be installed. The last version of chatterbot that works nicely with the Raspberry Pi is 1.0.4
 
 ```
 pip3 install groupy
 pip3 install wolframclient
+pip3 install chatterbot==1.0.4
 ```
 
 More information about the Wolfram Client Library for Python can be found [here](https://blog.wolfram.com/2019/05/16/announcing-the-wolfram-client-library-for-python/).  The groupy GroupMe API wrapper documentation can be found [here](https://groupy.readthedocs.io/en/master/)

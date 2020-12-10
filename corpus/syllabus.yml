@@ -1,0 +1,14 @@
+categories:
+- syllabus
+conversations:
+- - When is the next test?
+  - The next test is <?nexttestdate()?>
+- - When is the next quiz?
+  - The next quiz is <?nextquizdate()?>
+- - What is on the test?
+  - Here are the topics for the test. <?testtopics()?>
+- - What is due today?
+  - The next assignment is <?nextassignment()?>
+- - What are we covering in class today?
+  - The current topic is <?currenttopic()?>
+
