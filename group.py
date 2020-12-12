@@ -3,7 +3,7 @@ import os
 import subprocess
 from secrets import secrets
 from wolframconnector import *
-
+from chatterbotconnector import *
 
 class myGroupMe(Client):
   def __init__(self):
@@ -13,7 +13,7 @@ class myGroupMe(Client):
     self.bot = self.getBot(secrets["BOTID"])
     self.last_message_id = self.getCurrentMessageID()
     self.wc = WolframConnector()
-
+    self.cc = ChatBotConnector()
 
   def getBot(self, botid):
     '''Return the requested bot'''
@@ -41,12 +41,28 @@ class myGroupMe(Client):
       if self.processMessageQ(next_message[0]):
         #TODO: Replace with query selection processor
         query = str(next_message[0].text[1:])
-        (response, attachments) = self.processWolframAlphaQuery(query)
+        (response, attachments) = self.queryProcessor(query)
         if response == None:
           response = "Steve doesn't know that."
         self.bot.post(response, attachments = attachments)
       self.last_message_id = next_message[0].id 
   
+  def queryProcessor(self, query):
+    """Cycle through processors to find a result
+    """
+    # Check chatterbot first
+    response = self.cc.get_response(query)
+    attachments = None
+    if response.confidence > 0.5:
+      # process this response
+      response = self.cc.processResponse(response.text)
+    else:
+      # probably not that good so head to Wolfram alpha
+      (response, attachments) = self.processWolframAlphaQuery(query)
+      if response == None:
+        response = "I don't know that."
+    return (response, attachments)
+
   def processWolframAlphaQuery(self, query):
     """Performs WA call and returns a message/attachment tuple
     """

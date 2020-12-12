@@ -1,12 +1,14 @@
 categories:
 - syllabus
 conversations:
+- - Help
+  - Talk to me using a '>' at the beginning of your message.  I know things like 'When is the next test/quiz', 'what is due today' and 'what are we covering in class today'. I can also answer questions like 'what is Avogadro's number' and 'what is the molecular weight of sodium bicarbonate.'
 - - When is the next test?
-  - The next test is <?nexttestdate()?>
+  - The next test is <?nexttestdate()?>.
 - - When is the next quiz?
-  - The next quiz is <?nextquizdate()?>
+  - The next quiz is <?nextquizdate()?>.
 - - What is on the test?
-  - Here are the topics for the test. <?testtopics()?>
+  - <?testtopics()?>
 - - What is due today?
   - The next assignment is <?nextassignment()?>
 - - What are we covering in class today?

@@ -4,7 +4,6 @@ from chatterbot.response_selection import *
 from chatterbot.comparisons import * 
 import embeddedfunctions as ef
 import re
-import json
 
 class ChatBotConnector(ChatBot):
   """Child of ChatBot
