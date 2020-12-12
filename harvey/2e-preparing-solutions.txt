@@ -1,0 +1,34 @@
+2E Preparing Solutions
+
+Preparing a solution of known concentration is perhaps the most common
+activity in any analytical lab. The method for measuring out the solute and
+the solvent depend on the desired concentration and how exact the solution’s
+concentration needs to be known. Pipets and volumetric flasks are
+used when we need to know a solution’s exact concentration; graduated cylinders,
+beakers, and/or reagent bottles suffice when a concentrations need
+only be approximate. Two methods for preparing solutions are described
+in this section.
+
+A stock solution is prepared by weighing out an appropriate portion of
+a pure solid or by measuring out an appropriate volume of a pure liquid,
+placing it in a suitable flask, and diluting to a known volume. Exactly how
+one measure’s the reagent depends on the desired concentration unit. For
+example, to prepare a solution with a known molarity you weigh out an appropriate
+mass of the reagent, dissolve it in a portion of solvent, and bring
+it to the desired volume. To prepare a solution where the solute’s concentration
+is a volume percent, you measure out an appropriate volume of solute
+and add sufficient solvent to obtain the desired total volume.
+
+Solutions are often prepared by diluting a more concentrated stock solution.
+A known volume of the stock solution is transferred to a new container
+and brought to a new volume. Since the total amount of solute is the same
+before and after dilution, we know that
+where Co is the stock solution’s concentration, Vo is the volume of stock
+solution being diluted, Cd is the dilute solution’s concentration, and Vd
+is the volume of the dilute solution. Again, the type of glassware used to
+measure Vo and Vd depends on how precisely we need to know the solution’s
+concentration.
+
+As shown in the following example, we can use equation 2.2 to calculate
+a solution’s original concentration using its known concentration after
+dilution.

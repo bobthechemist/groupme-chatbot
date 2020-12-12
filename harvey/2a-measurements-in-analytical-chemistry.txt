@@ -1,0 +1,123 @@
+Analytical chemistry is a quantitative science. Whether determining the
+concentration of a species, evaluating an equilibrium constant, measuring a
+reaction rate, or drawing a correlation between a compound’s structure and
+its reactivity, analytical chemists engage in “measuring important chemical
+things.”1 In this section we review briefly the basic units of measurement
+and the proper use of significant figures.
+
+A measurement usually consists of a unit and a number that expresses the
+quantity of that unit. We can express the same physical measurement with
+different units, which creates confusion if we are not careful to specify the
+unit. For example, the mass of a sample that weighs 1.5 g is equivalent to
+0.0033 lb or to 0.053 oz. To ensure consistency, and to avoid problems,
+scientists use the common set of fundamental base units listed in Table 2.1.
+These units are called SI units after the Système International d’Unités.
+
+We define other measurements using these fundamental SI units. For
+example, we measure the quantity of heat produced during a chemical reaction
+in joules, (J), where 1 J is equivalent to 1 m2kg/s2. Table 2.2 provides
+a list of some important derived SI units, as well as a few common non-SI
+units.
+
+Chemists frequently work with measurements that are very large or very
+small. A mole contains 602 213 670 000 000 000 000 000 particles and
+some analytical techniques can detect as little as 0.000 000 000 000 001
+g of a compound. For simplicity, we express these measurements using
+scientific notation; thus, a mole contains 6.022 136 7 × 1023 particles,
+and the detected mass is 1 × 10–15 g. Sometimes we wish to express a measurement
+without the exponential term, replacing it with a prefix (Table
+2.3). A mass of 1×10–15 g, for example, is the same as 1 fg, or femtogram.
+
+A measurement provides information about both its magnitude and its
+uncertainty. Consider, for example, the three photos in Figure 2.1, taken at
+intervals of approximately 1 sec after placing a sample on the balance. Assuming
+the balance is properly calibrated, we are certain that the sample’s
+mass is more than 0.5729 g and less than 0.5731 g. We are uncertain,
+however, about the sample’s mass in the last decimal place since the final
+two decimal places fluctuate between 29, 30, and 31. The best we can do
+is to report the sample’s mass as 0.5730 g ± 0.0001 g, indicating both its
+magnitude and its absolute uncertainty.
+
+Significant Figures
+
+A measurement’s significant figures convey information about a measurement’s
+magnitude and uncertainty. The number of significant figures in
+a measurement is the number of digits known exactly plus one digit whose
+value is uncertain. The mass shown in Figure 2.1, for example, has four
+significant figures, three which we know exactly and one, the last, which
+is uncertain.
+
+Suppose we weigh a second sample, using the same balance, and obtain
+a mass of 0.0990 g. Does this measurement have 3, 4, or 5 significant figures?
+The zero in the last decimal place is the one uncertain digit and is significant.
+The other two zero, however, simply indicate the decimal point’s
+location. Writing the measurement in scientific notation (9.90 × 10–2)
+clarifies that there are three significant figures in 0.0990.
+
+There are two special cases when determining the number of significant
+figures in a measurement. For a measurement given as a logarithm, such as
+pH, the number of significant figures is equal to the number of digits to the
+right of the decimal point. Digits to the left of the decimal point are not
+significant figures since they indicate only the power of 10. A pH of 2.45,
+therefore, contains two significant figures.
+
+An exact number, such as a stoichiometric coefficient, has an infinite
+number of significant figures. A mole of CaCl2, for example, contains exactly
+two moles of chloride ions and one mole of calcium ions. Another
+example of an exact number is the relationship between some units. There
+are, for example, exactly 1000 mL in 1 L. Both the 1 and the 1000 have an
+infinite number of significant figures.
+
+Using the correct number of significant figures is important because it
+tells other scientists about the uncertainty of your measurements. Suppose
+you weigh a sample on a balance that measures mass to the nearest ±0.1 mg.
+Reporting the sample’s mass as 1.762 g instead of 1.7623 g is incorrect because
+it does not convey properly the measurement’s uncertainty. Reporting
+the sample’s mass as 1.76231 g also is incorrect because it falsely suggests
+an uncertainty of ±0.01 mg.
+
+Significant figures are also important because they guide us when reporting
+the result of an analysis. When we calculate a result, the answer cannot be
+more certain than the least certain measurement in the analysis. Rounding
+an answer to the correct number of significant figures is important.
+
+For addition and subtraction, we round the answer to the last decimal
+place in common for each measurement in the calculation. The exact sum
+of 135.621, 97.33, and 21.2163 is 254.1673. Since the last decimal place
+common to all three numbers is the hundredth’s place
+we round the result to 254.17. When working with scientific notation,
+first convert each measurement to a common exponent before determining
+the number of significant figures. For example, the sum of 6.17 × 107,
+4.3 × 105, and 3.23 × 104 is 6.22 × 107.
+
+ For multiplication and division, we round the answer to the same number
+of significant figures as the measurement with the fewest number of
+significant figures. For example, when we divide the product of 22.91 and
+0.152 by 16.302, we report the answer as 0.214 (three significant figures)
+because 0.152 has the fewest number of significant figures.
+There is no need to convert measurements in scientific notation to a common
+exponent when multiplying or dividing.
+
+Finally, to avoid “round-off” errors, it is a good idea to retain at least
+one extra significant figure throughout any calculation. Better yet, invest in 
+a good scientific calculator that allows you to perform lengthy calculations
+without the need to record intermediate values. When your calculation is
+complete, round the answer to the correct number of significant figures
+using the following simple rules.
+
+1. Retain the least significant figure if it and the digits that follow are less
+than half way to the next higher digit. For example, rounding 12.442
+to the nearest tenth gives 12.4 since 0.442 is less than half way between
+0.400 and 0.500.
+
+2. Increase the least significant figure by 1 if it and the digits that follow
+are more than half way to the next higher digit. For example, rounding
+12.476 to the nearest tenth gives 12.5 since 0.476 is more than half way
+between 0.400 and 0.500.
+
+3. If the least significant figure and the digits that follow are exactly halfway
+to the next higher digit, then round the least significant figure to
+the nearest even number. For example, rounding 12.450 to the nearest
+tenth gives 12.4, while rounding 12.550 to the nearest tenth gives 12.6.
+Rounding in this manner ensures that we round up as often as we round
+down.

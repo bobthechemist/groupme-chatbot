@@ -1,0 +1,90 @@
+Concentration is a general measurement unit that reports the amount of
+solute present in a known amount of solution
+Although we associate the terms “solute” and “solution” with liquid samples,
+we can extend their use to gas-phase and solid-phase samples as well. Table
+2.4 lists the most common units of concentration.
+
+Both molarity and formality express concentration as moles of solute
+per liter of solution; however, there is a subtle difference between them.
+Molarity is the concentration of a particular chemical species. Formality,
+on the other hand, is a substance’s total concentration without regard
+to its specific chemical form. There is no difference between a compound’s
+molarity and formality if it dissolves without dissociating into ions. The
+formal concentration of a solution of glucose, for example, is the same as
+its molarity.
+
+For a compound that ionizes in solution, such as CaCl2, molarity and
+formality are different. When we dissolve 0.1 moles of CaCl2 in 1 L of
+water, the solution contains 0.1 moles of Ca2+ and 0.2 moles of Cl–. The
+molarity of CaCl2, therefore, is zero since there is no undissociated CaCl2
+in solution; instead, the solution is 0.1 M in Ca2+ and 0.2 M in Cl–. The
+formality of CaCl2, however, is 0.1 F since it represents the total amount
+of CaCl2 in solution. This more rigorous definition of molarity, for better
+or worse, largely is ignored in the current literature, as it is in this textbook.
+When we state that a solution is 0.1 M CaCl2 we understand it to consist of
+Ca2+ and Cl– ions. We will reserve the unit of formality to situations where
+it provides a clearer description of solution chemistry.
+
+Molarity is used so frequently that we use a symbolic notation to simplify
+its expression in equations and in writing. Square brackets around a
+species indicate that we are referring to that species’ molarity. Thus, [Ca2+]
+is read as “the molarity of calcium ions.”
+
+Normality is a concentration unit no longer in common use; however,
+because you may encounter normality in older handbooks of analytical
+methods, it is helpful to understand its meaning. Normality defines concentration
+in terms of an equivalent, which is the amount of one chemical
+species that reacts stoichiometrically with another chemical species. Note
+that this definition makes an equivalent, and thus normality, a function of
+the chemical reaction in which the species participates. Although a solution
+of H2SO4 has a fixed molarity, its normality depends on how it reacts. You
+will find a more detailed treatment of normality in Appendix 1.
+
+Molality is used in thermodynamic calculations where a temperature independent
+unit of concentration is needed. Molarity is based on the volume
+of solution that contains the solute. Since density is a temperature dependent
+property, a solution’s volume, and thus its molar concentration, changes
+with temperature. By using the solvent’s mass in place of the solution’s
+volume, the resulting concentration becomes independent of temperature.
+
+Weight percent (% w/w), volume percent (% v/v) and weight-to-
+volume percent (% w/v) express concentration as the units of solute present
+in 100 units of solution. A solution that is 1.5% w/v NH4NO3, for
+example, contains 1.5 gram of NH4NO3 in 100 mL of solution.
+
+Parts per million (ppm) and parts per billion (ppb) are ratios that
+give the grams of solute in, respectively, one million or one billion grams
+of sample. For example, a sample of steel that is 450 ppm in Mn contains
+450 μg of Mn for every gram of steel. If we approximate the density of an
+aqueous solution as 1.00 g/mL, then we can express solution concentrations
+in ppm or ppb using the following relationships.
+
+For gases a part per million usually is expressed as a volume ratio; for example,
+a helium concentration of 6.3 ppm means that one liter of air contains
+6.3 μL of He.
+
+The most common ways to express concentration in analytical chemistry
+are molarity, weight percent, volume percent, weight-to-volume percent,
+parts per million and parts per billion. The general definition of concentration
+in equation 2.1 makes it is easy to convert between concentration units.
+
+Sometimes it is inconvenient to use the concentration units in Table 2.4.
+For example, during a chemical reaction a species’ concentration may
+change by many orders of magnitude. If we want to display the reaction’s
+progress graphically we might wish to plot the reactant’s concentration as a
+function of the volume of a reagent added to the reaction. Such is the case in
+Figure 2.2 for the titration of HCl with NaOH. The y-axis on the left-side
+of the figure displays the [H+] as a function of the volume of NaOH. The
+initial [H+] is 0.10 M and its concentration after adding 80 mL of NaOH
+is 4.3 × 10-13 M. We easily can follow the change in [H+] for the first 14
+additions of NaOH; however, for the remaining additions of NaOH the
+change in [H+] is too small to see.
+
+When working with concentrations that span many orders of magnitude,
+it often is more convenient to express concentration using a p-function.
+The p-function of X is written as pX and is defined as
+The pH of a solution that is 0.10 M H+, for example, is
+and the pH of 4.3 × 10–13 M H+ is
+Figure 2.2 shows that plotting pH as a function of the volume of NaOH
+provides more useful information about how the concentration of H+
+changes during the titration.

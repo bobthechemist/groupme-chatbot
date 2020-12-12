@@ -1,0 +1,27 @@
+Analytical chemistry is an quantitative discipline. Whether you are completing
+a statistical analysis, trying to optimize experimental conditions, or
+exploring how a change in pH affects a compound’s solubility, the ability to
+work with complex mathematical equations is essential. Spreadsheets, such
+as Microsoft Excel are an important tool for analyzing your data and for
+preparing graphs of your results. Scattered throughout this textbook you
+will find instructions for using spreadsheets.
+
+Although spreadsheets are useful, they are not always well suited for
+working with scientific data. If you plan to pursue a career in chemistry,
+you may wish to familiarize yourself with a more sophisticated computational
+software package, such as the freely available open-source program
+that goes by the name R, or commercial programs such as Mathematica
+or Matlab. You will find instructions for using R scattered throughout this
+textbook.
+
+Despite the power of spreadsheets and computational programs, don’t
+forget that the most important software is behind your eyes and between your
+ears. The ability to think intuitively about chemistry is a critically important
+skill. In many cases you will find that it is possible to determine if an
+analytical method is feasible or to approximate the optimum conditions
+for an analytical method without resorting to complex calculations. Why
+spend time developing a complex spreadsheet or writing software code
+when a “back-of-the-envelope” estimate will do the trick? Once you know
+the general solution to your problem, you can use a spreadsheet or a computational
+program to work out the specifics. Throughout this textbook we
+will introduce tools to help develop your ability to think intuitively.

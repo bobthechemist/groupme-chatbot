@@ -1,0 +1,27 @@
+A balanced reaction, which defines the stoichiometric relationship between
+the moles of reactants and the moles of products, provides the basis for
+many analytical calculations. Consider, for example, an analysis for oxalic
+acid, H2C2O4, in which Fe3+ oxidizes oxalic acid to CO2
+The balanced reaction shows us that one mole of oxalic acid reacts with two
+moles of Fe3+. As shown in the following example, we can use this balanced
+reaction to determine the amount of H2C2O4 in a sample of rhubarb if we
+know the moles of Fe3+ needed to react completely with oxalic acid.
+
+The analyte in Example 2.6, oxalic acid, is in a chemically useful form
+because there is a reagent, Fe3+, that reacts with it quantitatively. In many
+analytical methods, we first must convert the analyte into a more accessible
+form before we can complete the analysis. For example, one method for
+the quantitative analysis of disulfiram, C10H20N2S4—the active ingredient
+in the drug Antabuse—requires that we first convert the sulfur to SO2 by
+combustion, and then oxidize the SO2 to H2SO4 by bubbling it through a
+solution of H2O2. When the conversion is complete, the amount of H2SO4
+is determined by titrating with NaOH.
+
+To convert the moles of NaOH used in the titration to the moles of
+disulfiram in the sample, we need to know the stoichiometry of each reaction.
+Writing a balanced reaction for H2SO4 and NaOH is straightforward
+
+but the balanced reactions for the oxidations of C10H20N2S4 to SO2, and
+of SO2 to H2SO4 are not as immediately obvious. Although we can balance
+these redox reactions, it is often easier to deduce the overall stoichiometry
+by use a little chemical logic.
